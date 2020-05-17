@@ -40,7 +40,9 @@ android {
         testApplicationId 'com.nutomic.syncthingandroid.test'
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
-
+	lintOptions {
+	  abortOnError false
+	}
     signingConfigs {
         release {
             storeFile = {
